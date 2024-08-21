@@ -66,7 +66,7 @@ export const WETH = {
   ),
   [ChainId.GANACHE]: new Token(
     ChainId.GANACHE,
-    '0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9',
+    '0x322813Fd9A801c5507c9de605d63CEA4f2CE6c44',
     18,
     'WETH',
     'Wrapped Ether'
