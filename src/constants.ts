@@ -5,7 +5,7 @@ export type BigintIsh = JSBI | bigint | string
 
 export enum ChainId {
   MAINNET = 1,
-  SERVER = 31338
+  GANACHE = 31338
 }
 
 export enum TradeType {
@@ -21,11 +21,11 @@ export enum Rounding {
 
 // export const FACTORY_ADDRESS = '0x2EA9051d5a48eA2350b26306f2b959D262cf67e1' //Taiko
 // export const FACTORY_ADDRESS = '0xfd8D39298478F7b88FD7687F4B470d095bb8c7Bd' //base sepolia
-export const FACTORY_ADDRESS = '0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512' //server
+export const FACTORY_ADDRESS = '0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512' //GANACHE
 
 export const FACTORY_ADDRESS_MAP = {
   [ChainId.MAINNET]: '0xfd8D39298478F7b88FD7687F4B470d095bb8c7Bd',
-  [ChainId.SERVER]: '0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512'
+  [ChainId.GANACHE]: '0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512'
 }
 
 export const INIT_CODE_HASH = '0xcbb48a55fd9c60b9bc41ab0ab70c2a8e4fe7a9c450f4537e1e3cb9779bb87db5'

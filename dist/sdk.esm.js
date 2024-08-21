@@ -17,7 +17,7 @@ var ChainId;
 
 (function (ChainId) {
   ChainId[ChainId["MAINNET"] = 1] = "MAINNET";
-  ChainId[ChainId["SERVER"] = 31338] = "SERVER";
+  ChainId[ChainId["GANACHE"] = 31338] = "GANACHE";
 })(ChainId || (ChainId = {}));
 
 var TradeType;
@@ -37,9 +37,9 @@ var Rounding;
 // export const FACTORY_ADDRESS = '0xfd8D39298478F7b88FD7687F4B470d095bb8c7Bd' //base sepolia
 
 
-var FACTORY_ADDRESS = '0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512'; //server
+var FACTORY_ADDRESS = '0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512'; //GANACHE
 
-var FACTORY_ADDRESS_MAP = (_FACTORY_ADDRESS_MAP = {}, _FACTORY_ADDRESS_MAP[ChainId.MAINNET] = '0xfd8D39298478F7b88FD7687F4B470d095bb8c7Bd', _FACTORY_ADDRESS_MAP[ChainId.SERVER] = '0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512', _FACTORY_ADDRESS_MAP);
+var FACTORY_ADDRESS_MAP = (_FACTORY_ADDRESS_MAP = {}, _FACTORY_ADDRESS_MAP[ChainId.MAINNET] = '0xfd8D39298478F7b88FD7687F4B470d095bb8c7Bd', _FACTORY_ADDRESS_MAP[ChainId.GANACHE] = '0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512', _FACTORY_ADDRESS_MAP);
 var INIT_CODE_HASH = '0xcbb48a55fd9c60b9bc41ab0ab70c2a8e4fe7a9c450f4537e1e3cb9779bb87db5';
 var MINIMUM_LIQUIDITY = /*#__PURE__*/JSBI.BigInt(1000); // exports for internal consumption
 
@@ -439,7 +439,7 @@ function currencyEquals(currencyA, currencyB) {
     return currencyA === currencyB;
   }
 }
-var WETH = (_WETH = {}, _WETH[ChainId.MAINNET] = /*#__PURE__*/new Token(ChainId.MAINNET, '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6', 18, 'WETH', 'Wrapped Ether'), _WETH[ChainId.SERVER] = /*#__PURE__*/new Token(ChainId.SERVER, '0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9', 18, 'WETH', 'Wrapped Ether'), _WETH);
+var WETH = (_WETH = {}, _WETH[ChainId.MAINNET] = /*#__PURE__*/new Token(ChainId.MAINNET, '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6', 18, 'WETH', 'Wrapped Ether'), _WETH[ChainId.GANACHE] = /*#__PURE__*/new Token(ChainId.GANACHE, '0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9', 18, 'WETH', 'Wrapped Ether'), _WETH);
 
 var _toSignificantRoundin, _toFixedRounding;
 var Decimal = /*#__PURE__*/toFormat(_Decimal);
