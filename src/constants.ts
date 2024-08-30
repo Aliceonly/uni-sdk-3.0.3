@@ -26,7 +26,7 @@ export const FACTORY_ADDRESS_MAP = {
   [ChainId.GANACHE]: '0x5FbDB2315678afecb367f032d93F642f64180aa3'
 }
 
-export const INIT_CODE_HASH = '0xbada4c3ae971e82215bf789a55b26a3d1966bebb3d81750fa483c9dec482d6b6'
+export const INIT_CODE_HASH = '0xcbb48a55fd9c60b9bc41ab0ab70c2a8e4fe7a9c450f4537e1e3cb9779bb87db5'
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
 
